@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-28T14:23:06.770Z",
+    "end": "2021-07-28T14:23:16.487Z",
+    "duration": 9717,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7e5b743-22bb-48cd-9b27-1d3dc652df33",
+      "title": "",
+      "fullFile": "cypress/integration/PasswordRules.feature",
+      "file": "cypress/integration/PasswordRules.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "efb84f02-5cc8-44c0-8ace-aa29dd4f0a7c",
+          "title": "Password Rules",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check Password Strength (example #1)",
+              "fullTitle": "Password Rules Check Password Strength (example #1)",
+              "timedOut": null,
+              "duration": 3016,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "50a837b6-6059-4960-81f9-73a3c8508ae4",
+              "parentUUID": "efb84f02-5cc8-44c0-8ace-aa29dd4f0a7c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check Password Strength (example #2)",
+              "fullTitle": "Password Rules Check Password Strength (example #2)",
+              "timedOut": null,
+              "duration": 1799,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "34b35307-b19a-46d0-bbf5-ecf3a11bc1c4",
+              "parentUUID": "efb84f02-5cc8-44c0-8ace-aa29dd4f0a7c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check Password Strength (example #3)",
+              "fullTitle": "Password Rules Check Password Strength (example #3)",
+              "timedOut": null,
+              "duration": 1445,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "1213c0c5-0607-4578-96fc-f572090b10bc",
+              "parentUUID": "efb84f02-5cc8-44c0-8ace-aa29dd4f0a7c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check Password Strength (example #4)",
+              "fullTitle": "Password Rules Check Password Strength (example #4)",
+              "timedOut": null,
+              "duration": 1789,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a21cb0be-a9e6-47f3-8315-4a4e1ebefc4c",
+              "parentUUID": "efb84f02-5cc8-44c0-8ace-aa29dd4f0a7c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check Password Strength (example #5)",
+              "fullTitle": "Password Rules Check Password Strength (example #5)",
+              "timedOut": null,
+              "duration": 1533,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c262f381-1341-49bb-b404-11d79e5ad1c3",
+              "parentUUID": "efb84f02-5cc8-44c0-8ace-aa29dd4f0a7c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50a837b6-6059-4960-81f9-73a3c8508ae4",
+            "34b35307-b19a-46d0-bbf5-ecf3a11bc1c4",
+            "1213c0c5-0607-4578-96fc-f572090b10bc",
+            "a21cb0be-a9e6-47f3-8315-4a4e1ebefc4c",
+            "c262f381-1341-49bb-b404-11d79e5ad1c3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9582,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

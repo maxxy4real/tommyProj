@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-13T08:45:37.888Z",
+    "end": "2021-08-13T08:45:41.569Z",
+    "duration": 3681,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6baaf0e3-2510-40c6-85be-dcb8a2fff31a",
+      "title": "",
+      "fullFile": "cypress/integration/ExistingEmail.feature",
+      "file": "cypress/integration/ExistingEmail.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32a05fd9-a4a0-4190-8f25-88ae835cb4cc",
+          "title": "Existing Email up",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check error for existing email (example #1)",
+              "fullTitle": "Existing Email up Check error for existing email (example #1)",
+              "timedOut": null,
+              "duration": 3617,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: Cannot read property 'firstName' of undefined",
+                "estack": "TypeError: Cannot read property 'firstName' of undefined\n    at Signup_Page.enterName (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:108:59)\n    at Context.eval (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:66:22)\n    at Context.resolveAndRunStepDefinition (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:11893:29)\n    at Context.eval (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:11238:35)",
+                "diff": null
+              },
+              "uuid": "8dc2ff3d-79cd-4e42-8f83-29262f4c4d37",
+              "parentUUID": "32a05fd9-a4a0-4190-8f25-88ae835cb4cc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8dc2ff3d-79cd-4e42-8f83-29262f4c4d37"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3617,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

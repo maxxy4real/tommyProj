@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-21T14:36:02.866Z",
+    "end": "2021-08-21T14:36:07.013Z",
+    "duration": 4147,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bccd98b0-06a4-4cee-a2c1-b8462ac794db",
+      "title": "",
+      "fullFile": "cypress/integration/Signup.feature",
+      "file": "cypress/integration/Signup.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ed330e11-2100-48db-b47d-4b893bf60b5e",
+          "title": "Sign up",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "As a new user I want to signup successfully (example #1)",
+              "fullTitle": "Sign up As a new user I want to signup successfully (example #1)",
+              "timedOut": null,
+              "duration": 2477,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: Cannot read property 'firstName' of undefined",
+                "estack": "TypeError: Cannot read property 'firstName' of undefined\n    at Signup_Page.enterName (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/Signup.feature:108:59)\n    at Context.eval (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/Signup.feature:66:22)\n    at Context.resolveAndRunStepDefinition (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/Signup.feature:11893:29)\n    at Context.eval (https://my.wonderbill.com/__cypress/tests?p=cypress/integration/Signup.feature:11238:35)",
+                "diff": null
+              },
+              "uuid": "f9b53200-5638-4914-b699-656f3c5243a9",
+              "parentUUID": "ed330e11-2100-48db-b47d-4b893bf60b5e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check user is signup successfully",
+              "fullTitle": "Sign up Check user is signup successfully",
+              "timedOut": null,
+              "duration": 1563,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "dba097db-97ec-45b8-afb0-2e6606c31530",
+              "parentUUID": "ed330e11-2100-48db-b47d-4b893bf60b5e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dba097db-97ec-45b8-afb0-2e6606c31530"
+          ],
+          "failures": [
+            "f9b53200-5638-4914-b699-656f3c5243a9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4040,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

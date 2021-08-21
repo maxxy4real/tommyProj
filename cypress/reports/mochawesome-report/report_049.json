@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-21T21:05:57.149Z",
+    "end": "2021-08-21T21:06:35.951Z",
+    "duration": 38802,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca091551-a5a8-4b90-8fc0-37b63d24cd42",
+      "title": "",
+      "fullFile": "cypress/integration/ErrorMessages.feature",
+      "file": "cypress/integration/ErrorMessages.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6624bb7b-0c20-42f4-b7b8-d93755335598",
+          "title": "Error Messages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "User sees error message when an invalid password format is used",
+              "fullTitle": "Error Messages User sees error message when an invalid password format is used",
+              "timedOut": null,
+              "duration": 11311,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"header__link header__action account__icon header__desktop-sign-in-button\" type=\"button\" data-testid=\"sign-in-button\">Sign In...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because this element is detached from the DOM.\n\n`<button class=\"header__link header__action account__icon header__desktop-sign-in-button\" type=\"button\" data-testid=\"sign-in-button\">Sign In...</button>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (https://uk.tommy.com/__cypress/runner/cypress_runner.js:161173:24)\n    at runAllChecks (https://uk.tommy.com/__cypress/runner/cypress_runner.js:150104:12)\n    at retryActionability (https://uk.tommy.com/__cypress/runner/cypress_runner.js:150163:16)\n    at tryCatcher (https://uk.tommy.com/__cypress/runner/cypress_runner.js:10325:23)\n    at Function.Promise.attempt.Promise.try (https://uk.tommy.com/__cypress/runner/cypress_runner.js:7599:29)\n    at tryFn (https://uk.tommy.com/__cypress/runner/cypress_runner.js:165556:21)\n    at whenStable (https://uk.tommy.com/__cypress/runner/cypress_runner.js:165594:12)\n    at https://uk.tommy.com/__cypress/runner/cypress_runner.js:165089:16\n    at tryCatcher (https://uk.tommy.com/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (https://uk.tommy.com/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (https://uk.tommy.com/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (https://uk.tommy.com/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (https://uk.tommy.com/__cypress/runner/cypress_runner.js:8442:18)\n    at Promise._fulfill (https://uk.tommy.com/__cypress/runner/cypress_runner.js:8386:18)\n    at https://uk.tommy.com/__cypress/runner/cypress_runner.js:10000:46\nFrom Your Spec Code:\n    at Common_Page.clickSigninLink (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:220:31)\n    at Context.eval (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:186:22)\n    at Context.resolveAndRunStepDefinition (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:12235:29)\n    at Context.eval (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:11580:35)\nFrom Your Spec Code:\n    at Common_Page.clickSigninLink (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:220:31)\n    at Context.eval (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:186:22)\n    at Context.resolveAndRunStepDefinition (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:12235:29)\n    at Context.eval (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ErrorMessages.feature:11580:35)",
+                "diff": null
+              },
+              "uuid": "86ef4530-5334-48f0-b136-17c361dc2e5c",
+              "parentUUID": "6624bb7b-0c20-42f4-b7b8-d93755335598",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User sees error message when an invalid email address is provided",
+              "fullTitle": "Error Messages User sees error message when an invalid email address is provided",
+              "timedOut": null,
+              "duration": 27041,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a95a6cf7-e4fa-4bb5-9aa0-88edfe27f9b3",
+              "parentUUID": "6624bb7b-0c20-42f4-b7b8-d93755335598",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a95a6cf7-e4fa-4bb5-9aa0-88edfe27f9b3"
+          ],
+          "failures": [
+            "86ef4530-5334-48f0-b136-17c361dc2e5c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 38352,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

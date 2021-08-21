@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-21T15:19:08.214Z",
+    "end": "2021-08-21T15:19:21.113Z",
+    "duration": 12899,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4c88a0ee-203c-4ad4-a4ae-c2fb9a28e3de",
+      "title": "",
+      "fullFile": "cypress/integration/ExistingEmail.feature",
+      "file": "cypress/integration/ExistingEmail.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "13ff201b-6a69-42c9-b475-0aba359a7cfb",
+          "title": "Existing Email up",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check error for existing email (example #1)",
+              "fullTitle": "Existing Email up Check error for existing email (example #1)",
+              "timedOut": null,
+              "duration": 12778,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `:nth-child(6) > ._2y_Jn`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `:nth-child(6) > ._2y_Jn`, but never found it.\n    at Signup_Page.checkTermsConditions (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:138:10)\n    at Context.eval (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:53:22)\n    at Context.resolveAndRunStepDefinition (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:11898:29)\n    at Context.eval (https://uk.tommy.com/__cypress/tests?p=cypress/integration/ExistingEmail.feature:11243:35)",
+                "diff": null
+              },
+              "uuid": "0b44c018-217e-4924-8275-3c4f2f97de93",
+              "parentUUID": "13ff201b-6a69-42c9-b475-0aba359a7cfb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0b44c018-217e-4924-8275-3c4f2f97de93"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 12778,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
