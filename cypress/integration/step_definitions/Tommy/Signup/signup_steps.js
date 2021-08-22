@@ -1,5 +1,5 @@
 import {signup} from "./signuppage";
-import {common} from "./commonpage";
+import {common} from "../Common/commonpage";
 var faker = require('faker');
 
 

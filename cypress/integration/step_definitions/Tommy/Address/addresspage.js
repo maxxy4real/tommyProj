@@ -46,7 +46,7 @@ export class Address_Page{
     }
 
     viewAddressTitle(){
-        cy.get(this.addresstitle).should('have.text', 'VIEW ADDRESS')
+        cy.get(this.addresstitle, { timeout: 5000 }).should('have.text', 'VIEW ADDRESS')
     }
 
     clickDeleteAddressBtn(){
